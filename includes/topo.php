@@ -1,7 +1,7 @@
 <header class="header" id="header">
     <div class="header-inner">
         <a href="index.php" class="logo">
-            <span class="logo-v">V</span>etorizando
+            <img src="img/logo.png" alt="Vetorizando" height="100%">
         </a>
         <nav class="nav" id="nav">
             <a href="index.php" class="nav-link active">Início</a>

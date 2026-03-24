@@ -136,21 +136,9 @@ em { font-style: italic; color: var(--gold-dark); }
     max-width: 1200px;
     margin: 0 auto;
 }
-.logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    transition: opacity 0.3s;
-}
+.logo { height: 2.5rem !important; transition: opacity 0.3s; }
 .logo:hover { opacity: 0.8; }
-.logo-v {
-    display: inline-block;
-    background: var(--gold-grad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+
 .nav { display: flex; align-items: center; gap: 0.25rem; }
 .nav-link {
     font-size: 0.875rem;
@@ -651,8 +639,7 @@ em { font-style: italic; color: var(--gold-dark); }
     border-bottom: 1px solid rgba(255,255,255,0.08);
     margin-bottom: 2rem;
 }
-.logo-footer { color: white; }
-.logo-footer .logo-v { background: var(--gold-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
 .footer-brand p { font-size: 0.875rem; line-height: 1.7; margin-top: 1rem; max-width: 240px; }
 .social-links { display: flex; gap: 0.75rem; margin-top: 1.5rem; }
 .social-link {

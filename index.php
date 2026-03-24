@@ -206,7 +206,7 @@
                             <div class="testimonial-avatar">DR</div>
                             <div>
                                 <strong>Dra. Renata Alves</strong>
-                                <span>Clínica VetVida – São Paulo, SP</span>
+                                <span>Clínica VetVida – Feliz, RS</span>
                             </div>
                         </div>
                     </div>

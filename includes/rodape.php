@@ -2,8 +2,8 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="index.php" class="logo logo-footer">
-                    <span class="logo-v">V</span>etorizando
+                <a href="index.php" class="logo">
+                    <img src="img/logo.png" alt="Vetorizando" style="height: 2.5rem">
                 </a>
                 <p>Agência especializada em marketing veterinário. Sua clínica no próximo nível.</p>
                 <div class="social-links">
@@ -30,14 +30,14 @@
             </div>
             <div class="footer-contact">
                 <h4>Contato</h4>
-                <p>📞 (11) 99999-0000</p>
+                <p>📞 (51) 99769-9377</p>
                 <p>✉️ contato@vetorizando.com.br</p>
-                <p>📍 São Paulo, SP – Brasil</p>
+                <p>📍 Feliz, RS – Brasil</p>
                 <a href="contato.php" class="btn btn-gold btn-sm">Fale conosco</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Vetorizando. Todos os direitos reservados.</p>
+            <p>© 2026 Vetorizando. Todos os direitos reservados.</p>
             <p>Feito com 🐾 para a medicina veterinária</p>
         </div>
     </div>

@@ -34,7 +34,7 @@
                             <div class="contact-icon">📞</div>
                             <div>
                                 <h4>Telefone / WhatsApp</h4>
-                                <p>(11) 99999-0000</p>
+                                <p>(51) 99769-9377</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -48,7 +48,7 @@
                             <div class="contact-icon">📍</div>
                             <div>
                                 <h4>Localização</h4>
-                                <p>São Paulo, SP – Brasil<br>Atendimento em todo o Brasil e Portugal</p>
+                                <p>Feliz, RS – Brasil<br>Atendimento em todo o Brasil</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -82,11 +82,11 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="telefone">WhatsApp</label>
-                                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-0000">
+                                    <input type="tel" id="telefone" name="telefone" placeholder="(51) 99999-0000">
                                 </div>
                                 <div class="form-group">
                                     <label for="cidade">Cidade / Estado</label>
-                                    <input type="text" id="cidade" name="cidade" placeholder="São Paulo, SP">
+                                    <input type="text" id="cidade" name="cidade" placeholder="Feliz, RS">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -135,8 +135,8 @@
                         <p style="font-size:0.95rem; color:var(--text-mid); line-height:1.8;">Os primeiros resultados começam a aparecer a partir do 2º mês. Para tráfego pago, resultados podem vir já na primeira semana. Em redes sociais, o crescimento orgânico é progressivo e sustentável.</p>
                     </div>
                     <div class="faq-item reveal" style="border-bottom:1px solid var(--white-deep); padding:1.75rem 0;">
-                        <h4 style="font-family:'Jost',sans-serif; font-size:1rem; font-weight:600; color:var(--text-dark); margin-bottom:0.75rem;">A Vetorizando atende fora de São Paulo?</h4>
-                        <p style="font-size:0.95rem; color:var(--text-mid); line-height:1.8;">Sim! Atendemos clínicas e hospitais veterinários em todo o Brasil e também em Portugal. Nosso trabalho é 100% remoto e digital, sem limitação geográfica.</p>
+                        <h4 style="font-family:'Jost',sans-serif; font-size:1rem; font-weight:600; color:var(--text-dark); margin-bottom:0.75rem;">A Vetorizando atende fora do Rio Grande do Sul?</h4>
+                        <p style="font-size:0.95rem; color:var(--text-mid); line-height:1.8;">Sim! Atendemos clínicas e hospitais veterinários em todo o Brasil. Nosso trabalho é 100% remoto e digital, sem limitação geográfica.</p>
                     </div>
                     <div class="faq-item reveal" style="border-bottom:1px solid var(--white-deep); padding:1.75rem 0;">
                         <h4 style="font-family:'Jost',sans-serif; font-size:1rem; font-weight:600; color:var(--text-dark); margin-bottom:0.75rem;">Como funciona a aprovação do conteúdo?</h4>
