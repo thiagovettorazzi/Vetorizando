@@ -2,7 +2,9 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo = "Contato";
+        $titulo             = "Contato";
+        $meta_category      = "";
+        $meta_description   = "";
         
         require_once("includes/head.php");
         ?>

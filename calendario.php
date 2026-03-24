@@ -2,7 +2,9 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo = "Calendário Pet";
+        $titulo             = "Calendário Pet";
+        $meta_category      = "";
+        $meta_description   = "";
         
         require_once("includes/head.php");
         ?>

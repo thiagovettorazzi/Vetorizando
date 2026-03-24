@@ -4,6 +4,11 @@ $meta_title = $titulo . " - Vetorizando - Marketing Veterinário";
 $meta_site		= "Vetorizando";
 $meta_topic		= "";
 $meta_abstract	= "";
+$meta_canonical = "";
+
+$meta_image = "";
+$meta_image_width = "";
+$meta_image_height = "";
 ?>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,9 +16,6 @@ $meta_abstract	= "";
 
 <title><?=$meta_title;?></title>
 
-<?php
-/*
-?>
 <meta name="abstract"			content="<?=$meta_abstract;?>">
 <meta name="application-name"	content="<?=$meta_site;?>">
 <meta name="category"			content="<?=$meta_category;?>">
@@ -26,10 +28,10 @@ $meta_abstract	= "";
 <meta name="topic"				content="<?=$meta_topic;?>">
 <!-- <meta name="url"				content="<?//=URL_SITE?>"> -->
 
-<meta name="ICBM"				content="-29.6947137, -51.4929297">
-<meta name="geo.position"		content="-29.6947137, -51.4929297">
+<meta name="ICBM"				content="-29.4568638, -51.3508011">
+<meta name="geo.position"		content="-29.4568638, -51.3508011">
 <meta name="geo.region"			content="BR-RS">
-<meta name="geo.placename"		content="Montenegro">
+<meta name="geo.placename"		content="Feliz">
 
 <meta name="googlebot"			content="index, follow">
 <meta name="robots"				content="index, follow, noodp">
@@ -71,15 +73,9 @@ $meta_abstract	= "";
 <meta name="mobile-web-app-capable"			content="yes">
 <meta name="theme-color"					content="#212121">
 
-<!-- Scripts -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Material+Icons+Round" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<!--[if lt IE 9]><script src="js/core/html-5-shiv.min.js"></script><![endif]-->
-*/ ?>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--[if lt IE 9]><script src="js/core/html-5-shiv.min.js"></script><![endif]-->

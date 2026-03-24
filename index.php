@@ -2,7 +2,9 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo = "Home";
+        $titulo             = "Home";
+        $meta_category      = "";
+        $meta_description   = "";
         
         require_once("includes/head.php");
         ?>
