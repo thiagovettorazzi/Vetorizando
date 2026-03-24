@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós – Vetorizando</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre Nós – Vetorizando</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<header class="header" id="header">
-    <div class="header-inner">
-        <a href="index.php" class="logo"><span class="logo-v">V</span>etorizando</a>
-        <nav class="nav" id="nav">
-            <a href="index.php" class="nav-link">Início</a>
-            <a href="sobre.php" class="nav-link active">Sobre</a>
-            <a href="servicos.php" class="nav-link">Serviços</a>
-            <a href="calendario.php" class="nav-link">Calendário Pet</a>
-            <a href="contato.php" class="nav-link nav-cta">Fale Conosco</a>
-        </nav>
-        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-</header>
+    <body>
+        <!-- HEADER / NAV -->
+        <?php require_once("includes/topo.php"); ?>
 
 <section class="page-hero">
     <div class="container">
