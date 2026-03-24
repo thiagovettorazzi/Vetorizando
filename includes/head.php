@@ -1,14 +1,19 @@
 <?php
+$meta_title = $titulo . " - Vetorizando - Marketing Veterinário";
+
 $meta_site		= "Vetorizando";
 $meta_topic		= "";
 $meta_abstract	= "";
 ?>
-
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <base href="<?//=URL_SITE?>">
 
 <title><?=$meta_title;?></title>
+
+<?php
+/*
+?>
 <meta name="abstract"			content="<?=$meta_abstract;?>">
 <meta name="application-name"	content="<?=$meta_site;?>">
 <meta name="category"			content="<?=$meta_category;?>">
@@ -73,3 +78,8 @@ $meta_abstract	= "";
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!--[if lt IE 9]><script src="js/core/html-5-shiv.min.js"></script><![endif]-->
+*/ ?>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
