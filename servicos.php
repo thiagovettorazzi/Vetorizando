@@ -12,13 +12,13 @@
 
 <header class="header" id="header">
     <div class="header-inner">
-        <a href="index.html" class="logo"><span class="logo-v">V</span>etorizando</a>
+        <a href="index.php" class="logo"><span class="logo-v">V</span>etorizando</a>
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav-link">Início</a>
-            <a href="sobre.html" class="nav-link">Sobre</a>
-            <a href="servicos.html" class="nav-link active">Serviços</a>
-            <a href="calendario.html" class="nav-link">Calendário Pet</a>
-            <a href="contato.html" class="nav-link nav-cta">Fale Conosco</a>
+            <a href="index.php" class="nav-link">Início</a>
+            <a href="sobre.php" class="nav-link">Sobre</a>
+            <a href="servicos.php" class="nav-link active">Serviços</a>
+            <a href="calendario.php" class="nav-link">Calendário Pet</a>
+            <a href="contato.php" class="nav-link nav-cta">Fale Conosco</a>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
@@ -50,7 +50,7 @@
                     <li>Relatório mensal de desempenho</li>
                     <li>1 post impulsionado por mês (Meta Ads)</li>
                 </ul>
-                <a href="contato.html" class="btn btn-gold">Solicitar proposta</a>
+                <a href="contato.php" class="btn btn-gold">Solicitar proposta</a>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
                     <li>Template para redes sociais</li>
                     <li>Banner digital e impresso</li>
                 </ul>
-                <a href="contato.html" class="btn btn-gold">Solicitar proposta</a>
+                <a href="contato.php" class="btn btn-gold">Solicitar proposta</a>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
                     <li>Otimização contínua de campanhas</li>
                     <li>Relatório mensal detalhado de ROI</li>
                 </ul>
-                <a href="contato.html" class="btn btn-gold">Solicitar proposta</a>
+                <a href="contato.php" class="btn btn-gold">Solicitar proposta</a>
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@
                     <li>Carregamento rápido (Core Web Vitals)</li>
                     <li>Treinamento para gerenciamento</li>
                 </ul>
-                <a href="contato.html" class="btn btn-gold">Solicitar proposta</a>
+                <a href="contato.php" class="btn btn-gold">Solicitar proposta</a>
             </div>
         </div>
     </div>
@@ -146,7 +146,7 @@
                     <li>Lembretes de retorno e vacinação</li>
                     <li>Relatório de abertura e cliques</li>
                 </ul>
-                <a href="contato.html" class="btn btn-gold">Solicitar proposta</a>
+                <a href="contato.php" class="btn btn-gold">Solicitar proposta</a>
             </div>
         </div>
     </div>
@@ -160,7 +160,7 @@
             <p class="section-eyebrow">Pronto para começar?</p>
             <h2 class="cta-title">Escolha os serviços certos para a <em>sua clínica</em></h2>
             <p class="cta-subtitle">Montamos um pacote personalizado de acordo com o seu momento e objetivos. Fale com a gente!</p>
-            <a href="contato.html" class="btn btn-gold btn-large">Quero uma proposta</a>
+            <a href="contato.php" class="btn btn-gold btn-large">Quero uma proposta</a>
         </div>
     </div>
 </section>
@@ -169,7 +169,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="index.html" class="logo logo-footer"><span class="logo-v">V</span>etorizando</a>
+                <a href="index.php" class="logo logo-footer"><span class="logo-v">V</span>etorizando</a>
                 <p>Agência especializada em marketing veterinário. Sua clínica no próximo nível.</p>
                 <div class="social-links">
                     <a href="#" class="social-link">Ig</a>
@@ -179,11 +179,11 @@
             </div>
             <div class="footer-nav">
                 <h4>Navegação</h4>
-                <a href="index.html">Início</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="calendario.html">Calendário Pet</a>
-                <a href="contato.html">Contato</a>
+                <a href="index.php">Início</a>
+                <a href="sobre.php">Sobre</a>
+                <a href="servicos.php">Serviços</a>
+                <a href="calendario.php">Calendário Pet</a>
+                <a href="contato.php">Contato</a>
             </div>
             <div class="footer-nav">
                 <h4>Serviços</h4>
@@ -198,7 +198,7 @@
                 <p>📞 (11) 99999-0000</p>
                 <p>✉️ contato@vetorizando.com.br</p>
                 <p>📍 São Paulo, SP – Brasil</p>
-                <a href="contato.html" class="btn btn-gold btn-sm">Fale conosco</a>
+                <a href="contato.php" class="btn btn-gold btn-sm">Fale conosco</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -208,6 +208,6 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

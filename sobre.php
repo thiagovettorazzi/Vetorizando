@@ -12,13 +12,13 @@
 
 <header class="header" id="header">
     <div class="header-inner">
-        <a href="index.html" class="logo"><span class="logo-v">V</span>etorizando</a>
+        <a href="index.php" class="logo"><span class="logo-v">V</span>etorizando</a>
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav-link">Início</a>
-            <a href="sobre.html" class="nav-link active">Sobre</a>
-            <a href="servicos.html" class="nav-link">Serviços</a>
-            <a href="calendario.html" class="nav-link">Calendário Pet</a>
-            <a href="contato.html" class="nav-link nav-cta">Fale Conosco</a>
+            <a href="index.php" class="nav-link">Início</a>
+            <a href="sobre.php" class="nav-link active">Sobre</a>
+            <a href="servicos.php" class="nav-link">Serviços</a>
+            <a href="calendario.php" class="nav-link">Calendário Pet</a>
+            <a href="contato.php" class="nav-link nav-cta">Fale Conosco</a>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
@@ -174,7 +174,7 @@
             </div>
         </div>
         <div style="text-align:center; margin-top:3.5rem; position:relative; z-index:2;" class="reveal">
-            <a href="contato.html" class="btn btn-gold btn-large">Quero fazer parte</a>
+            <a href="contato.php" class="btn btn-gold btn-large">Quero fazer parte</a>
         </div>
     </div>
 </section>
@@ -183,7 +183,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="index.html" class="logo logo-footer"><span class="logo-v">V</span>etorizando</a>
+                <a href="index.php" class="logo logo-footer"><span class="logo-v">V</span>etorizando</a>
                 <p>Agência especializada em marketing veterinário. Sua clínica no próximo nível.</p>
                 <div class="social-links">
                     <a href="#" class="social-link">Ig</a>
@@ -193,26 +193,26 @@
             </div>
             <div class="footer-nav">
                 <h4>Navegação</h4>
-                <a href="index.html">Início</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="calendario.html">Calendário Pet</a>
-                <a href="contato.html">Contato</a>
+                <a href="index.php">Início</a>
+                <a href="sobre.php">Sobre</a>
+                <a href="servicos.php">Serviços</a>
+                <a href="calendario.php">Calendário Pet</a>
+                <a href="contato.php">Contato</a>
             </div>
             <div class="footer-nav">
                 <h4>Serviços</h4>
-                <a href="servicos.html#redes">Redes Sociais</a>
-                <a href="servicos.html#identidade">Identidade Visual</a>
-                <a href="servicos.html#trafego">Tráfego Pago</a>
-                <a href="servicos.html#sites">Criação de Sites</a>
-                <a href="servicos.html#email">E-mail Marketing</a>
+                <a href="servicos.php#redes">Redes Sociais</a>
+                <a href="servicos.php#identidade">Identidade Visual</a>
+                <a href="servicos.php#trafego">Tráfego Pago</a>
+                <a href="servicos.php#sites">Criação de Sites</a>
+                <a href="servicos.php#email">E-mail Marketing</a>
             </div>
             <div class="footer-contact">
                 <h4>Contato</h4>
                 <p>📞 (11) 99999-0000</p>
                 <p>✉️ contato@vetorizando.com.br</p>
                 <p>📍 São Paulo, SP – Brasil</p>
-                <a href="contato.html" class="btn btn-gold btn-sm">Fale conosco</a>
+                <a href="contato.php" class="btn btn-gold btn-sm">Fale conosco</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -222,6 +222,6 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
