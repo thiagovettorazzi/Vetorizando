@@ -31,7 +31,7 @@
                         <h2 class="section-title">Nascemos da paixão por animais e pela <em>comunicação</em></h2>
                         <p class="section-body">A Vetorizando nasceu da percepção de que a medicina veterinária merecia uma agência que entendesse de verdade o setor — suas especificidades, suas regulamentações e, acima de tudo, seus profissionais.</p>
                         <p class="section-body">Desde 2016, ajudamos clínicas, hospitais veterinários e médicos veterinários a construírem uma presença digital sólida, ética e que gera resultados reais. Não somos uma agência generalista que "também faz" veterinário: somos especialistas.</p>
-                        <p class="section-body">Nossa equipe é formada por veterinários, designers, especialistas em marketing digital, psicólogos e desenvolvedores — todos com profundo conhecimento do mercado pet.</p>
+                        <!-- <p class="section-body">Nossa equipe é formada por veterinários, designers, especialistas em marketing digital, psicólogos e desenvolvedores — todos com profundo conhecimento do mercado pet.</p> -->
                     </div>
                     <div class="about-visual reveal reveal-delay-2">
                         <div class="about-card-main">
@@ -78,6 +78,7 @@
         </section>
 
         <!-- EQUIPE -->
+        <!--
         <section class="section" style="background: var(--white-pure);">
             <div class="container">
                 <div class="section-header reveal">
@@ -136,6 +137,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <!-- NÚMEROS -->
         <section class="cta-section">
