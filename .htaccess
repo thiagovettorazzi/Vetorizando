@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /
+
+# Remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Custom error pages
+ErrorDocument 404 /404.php
+
+# Friendly URLs
+RewriteRule ^home$ index.php [L]
+RewriteRule ^sobre$ sobre.php [L]
+RewriteRule ^gerenciamento-redes-sociais$ gerenciamento.php [L]
+RewriteRule ^identidades-visuais$ identidades.php [L]
+RewriteRule ^outros-servicos$ outros-servicos.php [L]
+RewriteRule ^calendario-pet$ calendario.php [L]
