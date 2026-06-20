@@ -1049,3 +1049,383 @@ em { font-style: italic; color: var(--gold-dark); }
     .months-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-actions { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   SOBRE PAGE — ESTILOS EXCLUSIVOS
+   ============================================================ */
+
+/* ---- SOBRE HERO ---- */
+.sobre-hero {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6rem;
+}
+.sobre-hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.sobre-hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+.sobre-hero-orb-1 {
+    width: 500px; height: 500px;
+    top: -150px; right: -100px;
+    background: radial-gradient(circle, rgba(212,168,67,0.18) 0%, transparent 70%);
+    animation: float 9s ease-in-out infinite;
+}
+.sobre-hero-orb-2 {
+    width: 350px; height: 350px;
+    bottom: -50px; left: -80px;
+    background: radial-gradient(circle, rgba(166,124,58,0.12) 0%, transparent 70%);
+    animation: float 12s ease-in-out infinite reverse;
+}
+.sobre-hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(212,168,67,0.1);
+}
+.sobre-hero-ring-1 { width: 650px; height: 650px; top: -250px; right: -220px; }
+.sobre-hero-ring-2 { width: 450px; height: 450px; top: -150px; right: -120px; }
+
+.sobre-hero-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.sobre-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--white-pure);
+    border: 1.5px solid var(--white-deep);
+    border-radius: 50px;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-mid);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+.sobre-badge-pill:hover {
+    border-color: var(--gold-light);
+    color: var(--gold-dark);
+    transform: translateY(-2px);
+}
+
+/* ---- REDES SOCIAIS SECTION ---- */
+.sobre-redes-section {
+    background: linear-gradient(160deg, var(--text-dark) 0%, #3D2A0F 100%);
+    position: relative;
+    overflow: hidden;
+}
+.sobre-redes-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.sobre-redes-orb {
+    position: absolute;
+    top: 50%; left: 60%;
+    transform: translate(-50%, -50%);
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212,168,67,0.1) 0%, transparent 65%);
+}
+.sobre-redes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.sobre-redes-eyebrow { color: var(--gold-light) !important; }
+.sobre-redes-title { color: white !important; }
+.sobre-redes-title em { color: var(--gold-light); }
+.sobre-redes-lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+.sobre-redes-btn { margin-top: 2rem; }
+
+.sobre-redes-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(212,168,67,0.25);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    backdrop-filter: blur(8px);
+}
+.sobre-redes-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(212,168,67,0.2);
+}
+.sobre-includes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.sobre-includes-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.5;
+}
+.sobre-check {
+    color: var(--gold-light);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+}
+
+/* ---- CAPTAÇÃO / REGIÕES ---- */
+.sobre-regioes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+.sobre-regiao-card {
+    background: var(--white-pure);
+    border: 1.5px solid var(--white-deep);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.25rem;
+    text-align: center;
+    transition: var(--transition);
+    cursor: default;
+}
+.sobre-regiao-card:hover {
+    border-color: var(--gold-light);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-gold);
+}
+.sobre-regiao-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+.sobre-regiao-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+.sobre-regioes-obs {
+    margin-top: 2rem;
+    background: var(--white-warm);
+    border-left: 3px solid var(--gold-light);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.25rem 1.75rem;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
+.sobre-regioes-link {
+    color: var(--gold-dark);
+    font-weight: 600;
+    transition: color 0.25s;
+}
+.sobre-regioes-link:hover { color: var(--gold-light); }
+
+/* ---- FOTOGRAFIA ---- */
+.sobre-foto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+.sobre-foto-visual { position: relative; padding: 2rem; }
+.sobre-foto-card-main {
+    background: var(--gold-grad);
+    border-radius: var(--radius-lg);
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: var(--shadow-gold);
+    position: relative;
+    overflow: hidden;
+}
+.sobre-foto-card-main::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle at 60% 40%, rgba(255,255,255,0.12) 0%, transparent 60%);
+}
+.sobre-foto-emoji {
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+}
+.sobre-foto-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 1.5rem;
+}
+.sobre-foto-badge-float {
+    position: absolute;
+    top: 1.5rem; right: -1rem;
+    background: var(--white-pure);
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gold-dark);
+    box-shadow: var(--shadow-gold);
+}
+.sobre-foto-badge-icon { font-size: 1rem; }
+
+/* ---- GESTÃO QUE VAI ALÉM ---- */
+.sobre-gestao-section {
+    background: linear-gradient(160deg, var(--white-deep) 0%, var(--white-warm) 100%);
+}
+.sobre-gestao-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.sobre-gestao-card {
+    background: var(--white-pure);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.75rem;
+    border: 1px solid var(--white-deep);
+    transition: var(--transition);
+    text-align: center;
+}
+.sobre-gestao-card:hover {
+    border-color: var(--gold-light);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-gold);
+}
+.sobre-gestao-icon {
+    font-size: 2.25rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+.sobre-gestao-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+.sobre-gestao-card p {
+    font-size: 0.875rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
+
+/* ---- QUOTE ---- */
+.sobre-quote {
+    background: var(--gold-grad);
+    border-radius: var(--radius-lg);
+    padding: 3rem 4rem;
+    text-align: center;
+    box-shadow: var(--shadow-gold);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.sobre-quote::before {
+    content: '"';
+    position: absolute;
+    top: -0.5rem; left: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12rem;
+    color: rgba(255,255,255,0.08);
+    line-height: 1;
+}
+.sobre-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.3rem, 2.5vw, 1.85rem);
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ---- NÚMEROS ---- */
+.sobre-numeros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
+}
+.sobre-numero-item { text-align: center; }
+.sobre-numero-val {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: var(--gold-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+.sobre-numero-label {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* ---- SOBRE RESPONSIVE ---- */
+@media (max-width: 1024px) {
+    .sobre-redes-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .sobre-regioes-grid { grid-template-columns: repeat(3, 1fr); }
+    .sobre-foto-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .sobre-gestao-grid { grid-template-columns: repeat(2, 1fr); }
+    .sobre-numeros-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+}
+@media (max-width: 768px) {
+    .sobre-hero-badges { gap: 0.5rem; }
+    .sobre-badge-pill { font-size: 0.75rem; padding: 0.45rem 1rem; }
+    .sobre-regioes-grid { grid-template-columns: repeat(2, 1fr); }
+    .sobre-gestao-grid { grid-template-columns: 1fr; }
+    .sobre-foto-badge-float { position: static; margin-top: 1.25rem; justify-content: center; }
+    .sobre-quote { padding: 2.5rem 2rem; }
+    .sobre-numeros-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .sobre-regioes-grid { grid-template-columns: 1fr 1fr; }
+    .sobre-numeros-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .sobre-numero-val { font-size: 2.75rem; }
+}
