@@ -104,7 +104,7 @@
                         <p class="sobre-redes-lead">Gerenciar redes sociais vai muito além de publicar conteúdos.</p>
                         <p class="section-body" style="color: rgba(255,255,255,0.75);">É necessário planejamento, consistência, estratégia e conhecimento do público para transformar seguidores em clientes e fortalecer a autoridade da marca.</p>
                         <p class="section-body" style="color: rgba(255,255,255,0.75);">Na Vetorizando, todos os pacotes são desenvolvidos para criar uma presença digital profissional e alinhada aos objetivos do seu negócio.</p>
-                        <a href="servicos.php" class="btn btn-gold sobre-redes-btn">Conheça nossos pacotes</a>
+                        <a href="outras-solucoes.php" class="btn btn-gold sobre-redes-btn">Conheça nossos pacotes</a>
                     </div>
                     <div class="sobre-redes-features reveal reveal-delay-2">
                         <div class="sobre-redes-card">

@@ -64,6 +64,21 @@ function initContactForm() {
     });
 }
 
+// ---- Home Hero Slider ----
+function initHomeSlider() {
+    const slides = document.querySelectorAll('.home-slider .slide');
+    if (!slides.length) return;
+    
+    let currentSlide = 0;
+    // Crossfade a cada 6 segundos
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 6000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
+    initHomeSlider();
 });

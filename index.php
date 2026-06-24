@@ -2,229 +2,179 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo             = "Home";
-        $meta_category      = "";
-        $meta_description   = "";
+        $titulo             = "Agência de Marketing Veterinário";
+        $meta_category      = "Marketing";
+        $meta_description   = "Marketing veterinário com estratégia, conhecimento e resultados. A Vetorizando une o conhecimento técnico da medicina veterinária com a expertise em comunicação estratégica.";
         
         require_once("includes/head.php");
         ?>
     </head>
 
-    <body>
+    <body class="page-home">
         <!-- HEADER / NAV -->
         <?php require_once("includes/topo.php"); ?>
 
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-bg">
-                <div class="hero-orb hero-orb-1"></div>
-                <div class="hero-orb hero-orb-2"></div>
-                <div class="hero-line hero-line-1"></div>
-                <div class="hero-line hero-line-2"></div>
+        <!-- HERO SLIDER -->
+        <section class="home-hero">
+            <div class="home-slider">
+                <div class="slide slide-1 active"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+                <div class="slider-overlay"></div>
             </div>
-            <div class="hero-content">
-                <p class="hero-eyebrow">Agência Especializada em</p>
-                <h1 class="hero-title">Marketing<br><em>Veterinário</em></h1>
-                <p class="hero-subtitle">Transformamos clínicas e hospitais veterinários em marcas de referência. Estratégia, design e presença digital de alto nível.</p>
-                <div class="hero-actions">
-                    <a href="contato.php" class="btn btn-gold">Quero crescer agora</a>
-                    <a href="servicos.php" class="btn btn-outline">Ver serviços</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num">+200</span>
-                        <span class="stat-label">Clínicas atendidas</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">8+</span>
-                        <span class="stat-label">Anos de experiência</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">100%</span>
-                        <span class="stat-label">Foco veterinário</span>
+            
+            <div class="container home-hero-content">
+                <div class="hero-text-wrapper reveal">
+                    <p class="hero-eyebrow">Bem-vindo à Vetorizando</p>
+                    <h1 class="hero-title">Marketing veterinário com <em>estratégia, conhecimento</em> e resultados</h1>
+                    <div class="hero-actions">
+                        <a href="outras-solucoes.php" class="btn btn-gold btn-large">Conheça Nossas Soluções</a>
+                        <a href="contato.php" class="btn btn-outline btn-large">Fale com a Equipe</a>
                     </div>
                 </div>
             </div>
+            
             <div class="hero-scroll">
-                <span>role para baixo</span>
+                <span>role para descobrir</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
 
-        <!-- INTRO STRIP -->
-        <section class="intro-strip">
-            <div class="strip-inner">
-                <span>Marketing Veterinário</span>
-                <span class="dot">✦</span>
-                <span>Gestão de Redes Sociais</span>
-                <span class="dot">✦</span>
-                <span>Identidade Visual</span>
-                <span class="dot">✦</span>
-                <span>Tráfego Pago</span>
-                <span class="dot">✦</span>
-                <span>Criação de Sites</span>
-                <span class="dot">✦</span>
-                <span>Calendário Pet</span>
-                <span class="dot">✦</span>
-            </div>
-        </section>
-
-        <!-- SOBRE RESUMO -->
-        <section class="about-preview section">
+        <!-- A VETORIZANDO -->
+        <section class="home-about section">
+            <div class="home-about-bg"></div>
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-visual">
-                        <div class="about-card-main">
-                            <div class="about-card-inner">
-                                <div class="about-icon">🐾</div>
-                                <p class="about-card-text">Somos uma agência 100% dedicada ao universo da medicina veterinária</p>
+                <div class="home-about-grid">
+                    <div class="home-about-text reveal">
+                        <p class="section-eyebrow">A Vetorizando</p>
+                        <h2 class="section-title">Comunicação profissional que gera <em>autoridade e conexão real</em></h2>
+                        <p class="section-body">A Vetorizando nasceu para atender uma necessidade cada vez mais presente no mercado veterinário: comunicar com profissionalismo, gerar autoridade e criar conexões reais com os clientes.</p>
+                        
+                        <div class="founder-card">
+                            <div class="founder-icon">👩‍⚕️</div>
+                            <div>
+                                <strong>Fundada por Nicole Felippe</strong>
+                                <p>Médica veterinária, especialista em diagnóstico por imagem e profissional da área de publicidade e marketing há mais de 8 anos.</p>
                             </div>
-                            <div class="about-badge">Desde 2016</div>
                         </div>
-                        <div class="about-card-float">
-                            <span class="float-num">98%</span>
-                            <span class="float-text">de satisfação dos clientes</span>
-                        </div>
+                        
+                        <p class="section-body">A Vetorizando une dois mundos essenciais para o sucesso de clínicas, hospitais veterinários e profissionais da área: o conhecimento técnico da medicina veterinária e a expertise em comunicação estratégica.</p>
+                        <p class="section-body">Mais do que criar postagens, desenvolvemos posicionamento, identidade e presença digital para que sua marca seja reconhecida, lembrada e valorizada.</p>
+                        <p class="section-body">Trabalhamos com soluções personalizadas para médicos-veterinários, clínicas, hospitais e empresas do setor pet, respeitando a realidade, os objetivos e o momento de cada negócio.</p>
+                        
+                        <a href="sobre.php" class="btn btn-gold-outline" style="margin-top: 1rem;">Conheça nossa história</a>
                     </div>
-                    <div class="about-text">
-                        <p class="section-eyebrow">Quem somos</p>
-                        <h2 class="section-title">Uma agência que <em>fala a língua</em> do veterinário</h2>
-                        <p class="section-body">Na Vetorizando, entendemos as regulamentações do CFMV, o ciclo de consultas e a linguagem dos tutores. Não somos uma agência genérica — somos especialistas no nicho veterinário.</p>
-                        <p class="section-body">Nossa equipe multidisciplinar reúne veterinários, designers, especialistas em marketing e desenvolvedores web com um único objetivo: fazer sua clínica crescer de forma sustentável e ética.</p>
-                        <a href="sobre.php" class="btn btn-gold-outline">Conhecer a equipe</a>
+                    
+                    <div class="home-about-visual reveal reveal-delay-1">
+                        <div class="home-about-card-stack">
+                            <div class="ha-card ha-card-1">
+                                <span class="ha-icon">🏥</span>
+                                <span>Clínicas & Hospitais</span>
+                            </div>
+                            <div class="ha-card ha-card-2">
+                                <span class="ha-icon">🩺</span>
+                                <span>Especialistas</span>
+                            </div>
+                            <div class="ha-card ha-card-3">
+                                <span class="ha-icon">🐕</span>
+                                <span>Mercado Pet</span>
+                            </div>
+                            <div class="ha-badge">Estratégia + Veterinária</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVIÇOS -->
-        <section class="services section" id="servicos">
+        <!-- O QUE FAZEMOS -->
+        <section class="home-services section" id="servicos">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header text-center reveal">
                     <p class="section-eyebrow">O que fazemos</p>
-                    <h2 class="section-title">Serviços completos para <em>sua clínica brilhar</em></h2>
+                    <h2 class="section-title">Soluções <em>completas e estratégicas</em></h2>
+                    <p class="section-subtitle">Tudo o que a sua clínica ou hospital precisa para se destacar no mercado digital e atrair os tutores certos.</p>
                 </div>
-                <div class="services-grid">
-                    <a href="servicos.php#redes" class="service-card">
-                        <div class="service-icon">📱</div>
-                        <h3>Gestão de Redes Sociais</h3>
-                        <p>Criamos conteúdo estratégico e gerenciamos suas redes de A a Z, fortalecendo sua presença digital.</p>
-                        <span class="service-link">Saiba mais →</span>
-                    </a>
-                    <a href="servicos.php#identidade" class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Identidade Visual</h3>
-                        <p>Logos, paletas de cores e guias de estilo que refletem a essência da sua clínica ou hospital.</p>
-                        <span class="service-link">Saiba mais →</span>
-                    </a>
-                    <a href="servicos.php#trafego" class="service-card">
-                        <div class="service-icon">📊</div>
-                        <h3>Tráfego Pago</h3>
-                        <p>Campanhas no Google e Meta Ads direcionadas ao público certo: tutores da sua região.</p>
-                        <span class="service-link">Saiba mais →</span>
-                    </a>
-                    <a href="servicos.php#sites" class="service-card">
-                        <div class="service-icon">💻</div>
-                        <h3>Criação de Sites</h3>
-                        <p>Sites responsivos, rápidos e otimizados para SEO, que convertem visitantes em clientes.</p>
-                        <span class="service-link">Saiba mais →</span>
-                    </a>
-                    <a href="servicos.php#email" class="service-card">
-                        <div class="service-icon">✉️</div>
-                        <h3>E-mail Marketing</h3>
-                        <p>Campanhas segmentadas que mantêm o vínculo com seus tutores entre as consultas.</p>
-                        <span class="service-link">Saiba mais →</span>
-                    </a>
-                    <a href="calendario.php" class="service-card service-card-highlight">
-                        <div class="service-icon">📅</div>
-                        <h3>Calendário Pet</h3>
-                        <p>Todas as datas comemorativas do universo animal para planejar seu conteúdo com antecedência.</p>
-                        <span class="service-link">Ver calendário →</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- DIFERENCIAIS -->
-        <section class="differentials section">
-            <div class="container">
-                <div class="diff-grid">
-                    <div class="diff-text">
-                        <p class="section-eyebrow">Por que nos escolher</p>
-                        <h2 class="section-title">Marketing que respeita a <em>ética veterinária</em></h2>
-                        <p class="section-body">A publicidade veterinária tem regras rígidas. Nossa equipe conhece e respeita todas as resoluções do CFMV, garantindo que sua comunicação seja sempre ética e eficaz.</p>
-                        <ul class="diff-list">
-                            <li><span class="diff-check">✦</span> Resolução CFMV nº 1138/2016</li>
-                            <li><span class="diff-check">✦</span> Resolução CFMV nº 1321/2020</li>
-                            <li><span class="diff-check">✦</span> Conteúdo revisado por veterinários</li>
-                            <li><span class="diff-check">✦</span> Estratégia de longo prazo</li>
-                        </ul>
-                        <a href="sobre.php" class="btn btn-gold">Saber mais</a>
+                
+                <div class="home-services-grid">
+                    <!-- Servico 1 -->
+                    <div class="home-service-card reveal">
+                        <div class="hs-icon">📱</div>
+                        <h3>Gestão estratégica de redes sociais</h3>
+                        <a href="outras-solucoes.php" class="hs-link">Saber mais →</a>
                     </div>
-                    <div class="diff-visual">
-                        <div class="diff-card diff-card-1">
-                            <span class="diff-card-icon">🏆</span>
-                            <span>Especialistas no nicho</span>
-                        </div>
-                        <div class="diff-card diff-card-2">
-                            <span class="diff-card-icon">🔒</span>
-                            <span>100% dentro das normas</span>
-                        </div>
-                        <div class="diff-card diff-card-3">
-                            <span class="diff-card-icon">📈</span>
-                            <span>Resultados mensuráveis</span>
-                        </div>
-                        <div class="diff-card diff-card-4">
-                            <span class="diff-card-icon">💬</span>
-                            <span>Suporte dedicado</span>
-                        </div>
-                        <div class="diff-orb"></div>
+                    <!-- Servico 2 -->
+                    <div class="home-service-card reveal reveal-delay-1">
+                        <div class="hs-icon">🎨</div>
+                        <h3>Identidade visual e posicionamento de marca</h3>
+                        <a href="identidades-visuais.php" class="hs-link">Ver portfólio →</a>
+                    </div>
+                    <!-- Servico 3 -->
+                    <div class="home-service-card reveal reveal-delay-2">
+                        <div class="hs-icon">📸</div>
+                        <h3>Produção e captação de conteúdo</h3>
+                        <a href="outras-solucoes.php#fotografia" class="hs-link">Saber mais →</a>
+                    </div>
+                    <!-- Servico 4 -->
+                    <div class="home-service-card reveal">
+                        <div class="hs-icon">📅</div>
+                        <h3>Planejamento de conteúdo</h3>
+                        <a href="calendario.php" class="hs-link">Saber mais →</a>
+                    </div>
+                    <!-- Servico 5 -->
+                    <div class="home-service-card reveal reveal-delay-1">
+                        <div class="hs-icon">🖨️</div>
+                        <h3>Desenvolvimento de materiais gráficos</h3>
+                        <a href="identidades-visuais.php" class="hs-link">Saber mais →</a>
+                    </div>
+                    <!-- Servico 6 -->
+                    <div class="home-service-card reveal reveal-delay-2">
+                        <div class="hs-icon">💻</div>
+                        <h3>Criação de sites</h3>
+                        <a href="outras-solucoes.php" class="hs-link">Saber mais →</a>
+                    </div>
+                    <!-- Servico 7 -->
+                    <div class="home-service-card reveal">
+                        <div class="hs-icon">🎯</div>
+                        <h3>Tráfego pago</h3>
+                        <a href="outras-solucoes.php" class="hs-link">Saber mais →</a>
+                    </div>
+                    <!-- Servico 8 -->
+                    <div class="home-service-card reveal reveal-delay-1">
+                        <div class="hs-icon">✨</div>
+                        <h3>Conteúdo para Instagram e outras plataformas</h3>
+                        <a href="outras-solucoes.php" class="hs-link">Saber mais →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DEPOIMENTOS -->
-        <section class="testimonials section">
-            <div class="container">
-                <div class="section-header">
-                    <p class="section-eyebrow">Depoimentos</p>
-                    <h2 class="section-title">O que nossos clientes <em>dizem sobre nós</em></h2>
-                </div>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"A Vetorizando transformou completamente nossa presença digital. Em 3 meses, dobramos o número de novos tutores entrando em contato."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">DR</div>
-                            <div>
-                                <strong>Dra. Renata Alves</strong>
-                                <span>Clínica VetVida – Feliz, RS</span>
-                            </div>
-                        </div>
+        <!-- DIFERENCIAL -->
+        <section class="home-diff section">
+            <div class="home-diff-bg">
+                <div class="home-diff-orb"></div>
+            </div>
+            <div class="container relative">
+                <div class="home-diff-content reveal">
+                    <div class="diff-badge">O nosso diferencial</div>
+                    <h2 class="diff-title">Enquanto muitas agências precisam aprender sobre veterinária para comunicar o seu negócio...<br><em>Nós já fazemos parte desse mercado.</em></h2>
+                    
+                    <div class="diff-text-box">
+                        <p>Conhecemos a rotina clínica, a linguagem técnica, as dúvidas dos tutores e os desafios de posicionamento enfrentados pelos profissionais veterinários.</p>
+                        <p>Isso permite criar estratégias mais assertivas, conteúdos mais relevantes e uma comunicação verdadeiramente alinhada ao seu público.</p>
                     </div>
-                    <div class="testimonial-card testimonial-card-featured">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Finalmente uma agência que entende que somos veterinários, não só empresários. O conteúdo é correto, ético e funciona de verdade."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">MC</div>
-                            <div>
-                                <strong>Dr. Marcos Costa</strong>
-                                <span>Hospital PetCare – Rio de Janeiro, RJ</span>
-                            </div>
+                    
+                    <div class="diff-checks">
+                        <div class="diff-check-item">
+                            <span class="dc-icon">✓</span>
+                            <span>Linguagem técnica correta</span>
                         </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"O site que criaram para nós é lindo e funciona muito bem no celular. Recebemos elogios dos clientes sobre ele toda semana."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">LA</div>
-                            <div>
-                                <strong>Dra. Luana Andrade</strong>
-                                <span>Clínica Amigão – Curitiba, PR</span>
-                            </div>
+                        <div class="diff-check-item">
+                            <span class="dc-icon">✓</span>
+                            <span>Estratégias assertivas</span>
+                        </div>
+                        <div class="diff-check-item">
+                            <span class="dc-icon">✓</span>
+                            <span>Conteúdo relevante</span>
                         </div>
                     </div>
                 </div>
@@ -237,10 +187,10 @@
                 <div class="cta-orb"></div>
             </div>
             <div class="container">
-                <div class="cta-content">
-                    <p class="section-eyebrow">Pronto para crescer?</p>
-                    <h2 class="cta-title">Vamos construir a presença digital da sua clínica <em>juntos</em></h2>
-                    <p class="cta-subtitle">Entre em contato e receba uma proposta personalizada para sua clínica ou hospital veterinário.</p>
+                <div class="cta-content reveal">
+                    <p class="section-eyebrow">Eleve o nível da sua clínica</p>
+                    <h2 class="cta-title">Vamos construir a presença digital que <em>sua marca merece</em></h2>
+                    <p class="cta-subtitle">Entre em contato e receba uma proposta personalizada para seus objetivos.</p>
                     <a href="contato.php" class="btn btn-gold btn-large">Falar com um especialista</a>
                 </div>
             </div>

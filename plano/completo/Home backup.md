@@ -1,6 +1,8 @@
 
 Home:
 
+Pode se basear na página inicial desse site: [https://www.agenciafabulla.com.br/](https://www.agenciafabulla.com.br/). Que é bem bonita. Claro que você não deve fazer igualzinho. Faça algo diferente e novo para o nosso projeto.
+
 Marketing veterinário com estratégia, conhecimento e resultados
 
 A Vetorizando nasceu para atender uma necessidade cada vez mais presente no mercado veterinário: comunicar com profissionalismo, gerar autoridade e criar conexões reais com os clientes.
