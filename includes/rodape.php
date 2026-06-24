@@ -1,7 +1,7 @@
  
 - Home: 50%
 - Sobre a empresa: 100%
-- Identidades visuais: 70%
+- Identidades visuais: 100%
 - Outras soluções: 0%
 - Calendário pet: 80%
 - Contato: 50%
