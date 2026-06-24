@@ -35,12 +35,26 @@
 
                 <div class="months-grid reveal">
                     <?php
-                    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+                    $meses = [
+                        ["Janeiro", "mes-janeiro"],
+                        ["Fevereiro", "mes-fevereiro"],
+                        ["Março", "mes-marco"],
+                        ["Abril", "mes-abril"],
+                        ["Maio", "mes-maio"],
+                        ["Junho", "mes-junho"],
+                        ["Julho", "mes-julho"],
+                        ["Agosto", "mes-agosto"],
+                        ["Setembro", "mes-setembro"],
+                        ["Outubro", "mes-outubro"],
+                        ["Novembro", "mes-novembro"],
+                        ["Dezembro", "mes-dezembro"]
+                    ];
                     for ($i = 0; $i < 12; $i++) {
                         $num = str_pad($i + 1, 2, "0", STR_PAD_LEFT);
-                        $mesNome = $meses[$i];
+                        $mesNome = $meses[$i][0];
+                        $mesClasse = $meses[$i][1];
                     ?>
-                    <button class="month-btn" data-month="<?= $i + 1 ?>">
+                    <button class="month-btn <?= $mesClasse ?>" data-month="<?= $i + 1 ?>">
                         <span class="month-num"><?= $num ?></span>
                         <span class="month-name"><?= $mesNome ?></span>
                         <span class="month-count"></span>

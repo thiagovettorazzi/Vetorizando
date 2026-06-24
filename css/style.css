@@ -19,6 +19,20 @@
     --radius:      12px;
     --radius-lg:   24px;
     --transition:  0.3s cubic-bezier(0.4,0,0.2,1);
+
+    /* Cores das Campanhas Mensais */
+    --mes-janeiro:   #D9D9D9; /* Janeiro Branco */
+    --mes-fevereiro: #9b59b6; /* Fevereiro Roxo */
+    --mes-marco:     #1A237E; /* Março Azul-Marinho */
+    --mes-abril:     #F39C12; /* Abril Laranja */
+    --mes-maio:      #F1C40F; /* Maio Amarelo */
+    --mes-junho:     #8E44AD; /* Junho Violeta */
+    --mes-julho:     #D4A843; /* Julho Dourado */
+    --mes-agosto:    #2ECC71; /* Agosto Verde Claro */
+    --mes-setembro:  #E74C3C; /* Setembro Vermelho */
+    --mes-outubro:   #E84393; /* Outubro Rosa */
+    --mes-novembro:  #3498DB; /* Novembro Azul */
+    --mes-dezembro:  #27AE60; /* Dezembro Verde */
 }
 
 /* ---- RESET BASE ---- */
@@ -826,9 +840,37 @@ em { font-style: italic; color: var(--gold-dark); }
     transition: var(--transition);
     text-align: center;
     font-family: 'Jost', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
-.month-btn:hover { border-color: var(--gold-light); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
-.month-btn.active { background: var(--gold-grad); border-color: transparent; }
+.month-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--cor-mes, transparent);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+.month-btn:hover::before { opacity: 1; height: 6px; }
+
+/* Cores das Campanhas Mensais */
+.mes-janeiro   { --cor-mes: var(--mes-janeiro); }
+.mes-fevereiro { --cor-mes: var(--mes-fevereiro); }
+.mes-marco     { --cor-mes: var(--mes-marco); }
+.mes-abril     { --cor-mes: var(--mes-abril); }
+.mes-maio      { --cor-mes: var(--mes-maio); }
+.mes-junho     { --cor-mes: var(--mes-junho); }
+.mes-julho     { --cor-mes: var(--mes-julho); }
+.mes-agosto    { --cor-mes: var(--mes-agosto); }
+.mes-setembro  { --cor-mes: var(--mes-setembro); }
+.mes-outubro   { --cor-mes: var(--mes-outubro); }
+.mes-novembro  { --cor-mes: var(--mes-novembro); }
+.mes-dezembro  { --cor-mes: var(--mes-dezembro); }
+
+.month-btn:hover { border-color: var(--cor-mes, var(--gold-light)); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
+.month-btn.active { background: var(--cor-mes, var(--gold-grad)); border-color: transparent; }
+
 .month-btn.active .month-name, .month-btn.active .month-count { color: white; }
 .month-num {
     display: block;
