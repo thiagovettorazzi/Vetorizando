@@ -1,5 +1,5 @@
 // ---- Calendar ----
-const calData = {
+const calDataBackup = {
     1: {
         name: 'Janeiro',
         dates: [
@@ -122,6 +122,149 @@ const calData = {
     }
 };
 
+const calData = {
+    1: {
+        name: 'Janeiro Branco – Conscientização da saúde de filhotes e saúde mental dos pets',
+        dates: [
+            { day: '16', title: 'Dia do Fisiatra Veterinário' },
+            { day: '20', title: 'Dia do Farmacêutico' }
+        ]
+    },
+    2: {
+        name: 'Fevereiro Roxo – Conscientização do cuidado com pets idosos e doenças neurodegenerativas',
+        dates: [
+            { day: '04', title: 'Dia Mundial do Combate ao Câncer' },
+            { day: '17', title: 'Dia Mundial do Gato' },
+            { day: '21', title: 'Dia Mundial da Baleia' }
+        ]
+    },
+    3: {
+        name: 'Março Azul-Marinho – Prevenção de doenças gastrointestinais e verminoses',
+        dates: [
+            { day: '01', title: 'Dia Internacional do Porco' },
+            { day: '03', title: 'Dia Mundial da Vida Selvagem' },
+            { day: '08', title: 'Dia Internacional da Mulher' },
+            { day: '08', title: 'Dia do Médico Nefrologista' },
+            { day: '11', title: 'Dia Mundial do Rim' },
+            { day: '14', title: 'Dia dos Animais' },
+            { day: '14', title: 'Dia do Auxiliar Veterinário' },
+            { day: '16', title: 'Dia Internacional do Cavalo' },
+            { day: '16', title: 'Dia do Dermatologista Veterinário' },
+            { day: '20', title: 'Dia Internacional da Felicidade' }
+        ]
+    },
+    4: {
+        name: 'Abril Laranja – Prevenção da Crueldade Animal',
+        dates: [
+            { day: '04', title: 'Dia Mundial dos Animais de Rua' },
+            { day: '04', title: 'Dia Mundial do Rato' },
+            { day: '10', title: 'Dia Mundial da Homeopatia' },
+            { day: 'Último sábado', title: 'Dia Mundial da Medicina Veterinária' },
+            { day: '27', title: 'Dia Internacional da Conservação dos Anfíbios' }
+        ]
+    },
+    5: {
+        name: 'Maio Amarelo – Conscientização da Saúde Renal e Oral',
+        dates: [
+            { day: '01', title: 'Dia do Trabalhador' },
+            { day: '07', title: 'Dia do Oftalmologista' },
+            { day: 'Segundo domingo', title: 'Dia das Mães' },
+            { day: '13', title: 'Dia do Zootecnista' },
+            { day: '15', title: 'Dia Internacional da Família' },
+            { day: '22', title: 'Dia do Abraço' },
+            { day: '23', title: 'Dia Mundial da Tartaruga' },
+            { day: '26', title: 'Dia do Combate ao Glaucoma' }
+        ]
+    },
+    6: {
+        name: 'Junho Violeta – Prevenção de doenças oculares e dermatológicas',
+        dates: [
+            { day: '05', title: 'Dia Mundial do Meio Ambiente e da Ecologia' },
+            { day: '09', title: 'Dia da Imunização' },
+            { day: '15', title: 'Dia do Patologista Veterinário' }
+        ]
+    },
+    7: {
+        name: 'Julho Dourado da Vacinação Animal – Conscientização sobre doenças graves e zoonoses',
+        dates: [
+            { day: '06', title: 'Dia Mundial do Combate às Zoonoses' },
+            { day: '08', title: 'Dia da Ciência e do Pesquisador Científico' },
+            { day: '10', title: 'Dia Mundial da Saúde Ocular' },
+            { day: '16', title: 'Dia Internacional do Porquinho-da-Índia' },
+            { day: '20', title: 'Dia Internacional da Amizade / Dia do Amigo' },
+            { day: '26', title: 'Dia do Recepcionista' },
+            { day: '26', title: 'Dia do Tosador' },
+            { day: '31', title: 'Dia do Vira-Lata' }
+        ]
+    },
+    8: {
+        name: 'Agosto Verde Claro – Conscientização sobre Leishmaniose, PIF, FIV e FELV',
+        dates: [
+            { day: '08', title: 'Dia Internacional do Gato' },
+            { day: 'Segundo domingo', title: 'Dia dos Pais' },
+            { day: '10', title: 'Dia do Protetor dos Animais' },
+            { day: '14', title: 'Dia do Cardiologista' },
+            { day: 'Terceiro sábado', title: 'Dia Internacional do Animal Abandonado' },
+            { day: '21', title: 'Dia do Ultrassonografista' },
+            { day: '26', title: 'Dia Mundial do Cão' },
+            { day: '30', title: 'Dia do Oftalmologista Veterinário' }
+        ]
+    },
+    9: {
+        name: 'Setembro Vermelho – Prevenção de Doenças Cardiovasculares',
+        dates: [
+            { day: '08', title: 'Dia Mundial da Fisioterapia' },
+            { day: '09', title: 'Dia do Médico Veterinário' },
+            { day: '14', title: 'Dia do Cavalo' },
+            { day: '14', title: 'Dia da Capivara' },
+            { day: '15', title: 'Dia do Cliente' },
+            { day: '19', title: 'Dia do Ortopedista' },
+            { day: '25', title: 'Dia Mundial do Farmacêutico' },
+            { day: 'Último sábado', title: 'Dia Internacional do Coelho' },
+            { day: '28', title: 'Dia Mundial da Luta Contra a Raiva' },
+            { day: '29', title: 'Dia Mundial do Coração' }
+        ]
+    },
+    10: {
+        name: 'Outubro Rosa – Prevenção do câncer de mama e de doenças frequentes em fêmeas',
+        dates: [
+            { day: '01', title: 'Dia do Cão Idoso' },
+            { day: '04', title: 'Dia Mundial dos Animais' },
+            { day: '04', title: 'Dia de São Francisco de Assis' },
+            { day: '04', title: 'Dia do Cão' },
+            { day: '04', title: 'Dia da Natureza' },
+            { day: '04', title: 'Dia da Adoção Animal' },
+            { day: '05', title: 'Dia Mundial das Aves' },
+            { day: '05', title: 'Dia do Pet Sitter' },
+            { day: '12', title: 'Dia das Crianças' },
+            { day: '12', title: 'Dia dos Filhotes' },
+            { day: '12', title: 'Dia do Mar' },
+            { day: '13', title: 'Dia do Fisioterapeuta' },
+            { day: '16', title: 'Dia do Anestesiologista' },
+            { day: '21', title: 'Dia Mundial dos Répteis' },
+            { day: '27', title: 'Dia da Conscientização pelo Gato Preto' }
+        ]
+    },
+    11: {
+        name: 'Novembro Azul – Prevenção do câncer de próstata e outras neoplasias',
+        dates: [
+            { day: '05', title: 'Dia do Adestrador' },
+            { day: '14', title: 'Dia Mundial de Combate à Diabetes' },
+            { day: '17', title: 'Dia do Gato Preto' },
+            { day: '25', title: 'Dia do Doador de Sangue' }
+        ]
+    },
+    12: {
+        name: 'Dezembro Verde – Combate ao Abandono Animal',
+        dates: [
+            { day: '05', title: 'Dia Internacional do Voluntariado' },
+            { day: '10', title: 'Dia Internacional dos Direitos dos Animais' },
+            { day: '24', title: 'Natal' },
+            { day: '31', title: 'Ano Novo' }
+        ]
+    }
+};
+
 function initCalendar() {
     const monthBtns = document.querySelectorAll('.month-btn');
     const panel = document.getElementById('monthPanel');
@@ -148,18 +291,27 @@ function initCalendar() {
             const data = calData[m];
             if (!data) return;
 
-            const list = data.dates.map(d => `
+            const list = data.dates.map(d => {
+                let dayFormatted = d.day;
+                if (!isNaN(parseInt(d.day)) && d.day.length <= 2) {
+                    dayFormatted = `${String(parseInt(d.day)).padStart(2,'0')}/${String(m).padStart(2,'0')}`;
+                } else if (d.day.includes('º')) {
+                    dayFormatted = `${d.day.replace('º','').padStart(2,'0')}/${String(m).padStart(2,'0')}`;
+                }
+
+                return `
                 <div class="date-item">
-                    <span class="date-tag">${d.day}/${String(m).padStart(2,'0')}</span>
+                    <span class="date-tag">${dayFormatted}</span>
                     <div class="date-info">
                         <strong>${d.title}</strong>
-                        <span>${d.desc}</span>
+                        ${d.desc ? `<span>${d.desc}</span>` : ''}
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             panel.innerHTML = `
-                <h3>${data.name} — Datas Comemorativas</h3>
+                <h3>${data.name}</h3>
                 <div class="dates-list">${list}</div>
             `;
             panel.classList.add('visible');
