@@ -235,169 +235,47 @@
                 
                 <!-- GRID DE PORTFÓLIO -->
                 <div class="iv-portfolio-grid">
-                    <!-- Exemplo 1 -->
-                    <div class="iv-portfolio-item" data-category="marca">
+                    <?php
+                    // Array com as informações do portfólio
+                    // [Categoria, Imagem, Alt, Label, Nome da Clínica, Classe Extra]
+                    $portfolio = [
+                        ["marca", "img/portfolio/portfolio-01.jpg", "Identidade visual - Clínica veterinária", "Identidade completa", "Nome da Clínica", ""],
+                        ["logo", "img/portfolio/portfolio-02.jpg", "Logotipo - Hospital veterinário", "Logotipo", "Nome da Clínica", ""],
+                        // ["marca", "img/portfolio/portfolio-03.jpg", "Identidade visual completa - Clínica veterinária", "Identidade completa", "Nome da Clínica", "iv-portfolio-item-wide"],
+                        ["material", "img/portfolio/portfolio-04.jpg", "Material gráfico - Clínica veterinária", "Materiais", "Nome da Clínica", ""],
+                        ["logo", "img/portfolio/portfolio-05.jpg", "Logotipo veterinário", "Logotipo", "Nome da Clínica", ""],
+                        ["material", "img/portfolio/portfolio-06.jpg", "Material gráfico veterinário", "Materiais", "Nome da Clínica", ""],
+                        // ["marca", "img/portfolio/portfolio-07.jpg", "Identidade visual completa veterinária", "Identidade completa", "Nome da Clínica", "iv-portfolio-item-wide"],
+                        ["logo", "img/portfolio/portfolio-08.jpg", "Logotipo clínica veterinária", "Logotipo", "Nome da Clínica", ""],
+                        ["marca", "img/portfolio/portfolio-09.jpg", "Identidade visual veterinária", "Identidade completa", "Nome da Clínica", ""]
+                    ];
+
+                    for ($i = 0; $i < count($portfolio); $i++) {
+                        $p_cat = $portfolio[$i][0];
+                        $p_img = $portfolio[$i][1];
+                        $p_alt = $portfolio[$i][2];
+                        $p_label = $portfolio[$i][3];
+                        $p_name = $portfolio[$i][4];
+                        $p_class = $portfolio[$i][5];
+                    ?>
+                    <!-- Item <?= $i + 1; ?> -->
+                    <div class="iv-portfolio-item <?= $p_class; ?>" data-category="<?= $p_cat; ?>">
                         <div class="iv-portfolio-card">
                             <div class="iv-portfolio-img-wrap">
-                                <!-- Substitua o src abaixo pela imagem real do projeto -->
-                                <img src="img/portfolio/portfolio-01.jpg" alt="Identidade visual - Clínica veterinária" class="iv-portfolio-img" loading="lazy">
+                                <img src="<?= $p_img; ?>" alt="<?= $p_alt; ?>" class="iv-portfolio-img" loading="lazy">
                                 <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="0">
+                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="<?= $i; ?>">
                                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
                                     </button>
                                 </div>
                             </div>
                             <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Identidade completa</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
+                                <span class="iv-portfolio-cat"><?= $p_label; ?></span>
+                                <h4 class="iv-portfolio-name"><?= $p_name; ?></h4>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Exemplo 2 -->
-                    <div class="iv-portfolio-item" data-category="logo">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-02.jpg" alt="Logotipo - Hospital veterinário" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="1">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Logotipo</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 3 — DESTAQUE (maior) -->
-                    <div class="iv-portfolio-item iv-portfolio-item-wide" data-category="marca">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-03.jpg" alt="Identidade visual completa - Clínica veterinária" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="2">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Identidade completa</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 4 -->
-                    <div class="iv-portfolio-item" data-category="material">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-04.jpg" alt="Material gráfico - Clínica veterinária" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="3">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Materiais</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 5 -->
-                    <div class="iv-portfolio-item" data-category="logo">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-05.jpg" alt="Logotipo veterinário" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="4">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Logotipo</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 6 -->
-                    <div class="iv-portfolio-item" data-category="material">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-06.jpg" alt="Material gráfico veterinário" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="5">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Materiais</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 7 — DESTAQUE (maior) -->
-                    <div class="iv-portfolio-item iv-portfolio-item-wide" data-category="marca">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-07.jpg" alt="Identidade visual completa veterinária" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="6">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Identidade completa</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 8 -->
-                    <div class="iv-portfolio-item" data-category="logo">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-08.jpg" alt="Logotipo clínica veterinária" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="7">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Logotipo</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Exemplo 9 -->
-                    <div class="iv-portfolio-item" data-category="marca">
-                        <div class="iv-portfolio-card">
-                            <div class="iv-portfolio-img-wrap">
-                                <img src="img/portfolio/portfolio-09.jpg" alt="Identidade visual veterinária" class="iv-portfolio-img" loading="lazy">
-                                <div class="iv-portfolio-overlay">
-                                    <button class="iv-portfolio-zoom" aria-label="Ampliar imagem" data-index="8">
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="iv-portfolio-info">
-                                <span class="iv-portfolio-cat">Identidade completa</span>
-                                <h4 class="iv-portfolio-name">Nome da Clínica</h4>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php } ?>
                 </div>
                 <!-- /GRID DE PORTFÓLIO -->
 
