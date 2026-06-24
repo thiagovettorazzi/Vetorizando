@@ -21,14 +21,7 @@
                 <a href="calendario.php">Calendário Pet</a>
                 <a href="contato.php">Contato</a>
             </div>
-            <div class="footer-nav">
-                <h4>Serviços</h4>
-                <a href="servicos.php#redes">Redes Sociais</a>
-                <a href="servicos.php#identidade">Identidade Visual</a>
-                <a href="servicos.php#trafego">Tráfego Pago</a>
-                <a href="servicos.php#sites">Criação de Sites</a>
-                <a href="servicos.php#email">E-mail Marketing</a>
-            </div>
+
             <div class="footer-contact">
                 <h4>Contato</h4>
                 <p>📞 (51) 99769-9377</p>
