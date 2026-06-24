@@ -1,16 +1,6 @@
-
-- Home: 50%
-- Sobre a empresa: 100%
-- Identidades visuais: 100%
-- Outras soluções: 0%
-- Calendário pet: 100%
-- Contato: 50%
-- Rodapé: 70%
-
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
-            <!--
             <div class="footer-brand">
                 <a href="index.php" class="logo">
                     <img src="img/logo.png" alt="Vetorizando" style="height: 2.5rem">
@@ -26,7 +16,8 @@
                 <h4>Navegação</h4>
                 <a href="index.php">Início</a>
                 <a href="sobre.php">Sobre</a>
-                <a href="servicos.php">Serviços</a>
+                <a href="identidades-visuais.php">Identidades visuais</a>
+                <a href="outras-solucoes.php">Outras soluções</a>
                 <a href="calendario.php">Calendário Pet</a>
                 <a href="contato.php">Contato</a>
             </div>
@@ -45,7 +36,6 @@
                 <p>📍 Feliz, RS – Brasil</p>
                 <a href="contato.php" class="btn btn-gold btn-sm">Fale conosco</a>
             </div>
-            -->
         </div>
         <div class="footer-bottom">
             <p>© 2026 Vetorizando. Todos os direitos reservados.</p>

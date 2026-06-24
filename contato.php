@@ -18,7 +18,7 @@
             <div class="container">
                 <p class="page-hero-eyebrow">Vamos conversar</p>
                 <h1>Entre em <em>contato</em> conosco</h1>
-                <p>Responda nosso formulário e receba uma proposta personalizada para a sua clínica ou hospital veterinário. Retornamos em até 24 horas.</p>
+                <p>Responda nosso formulário e receba uma proposta personalizada para a sua clínica ou hospital veterinário.</p>
             </div>
         </section>
 
@@ -49,7 +49,7 @@
                             <div class="contact-icon">📍</div>
                             <div>
                                 <h4>Localização</h4>
-                                <p>Feliz, RS – Brasil<br>Atendimento em todo o Brasil</p>
+                                <p>Feliz, RS – Brasil</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -58,11 +58,6 @@
                                 <h4>Horário de atendimento</h4>
                                 <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
                             </div>
-                        </div>
-
-                        <div style="margin-top: 2.5rem; padding: 2rem; background: var(--white-deep); border-radius: var(--radius-lg); border-left: 3px solid var(--gold-light);">
-                            <p style="font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-style:italic; color:var(--text-dark); line-height:1.5;">"A primeira coisa é falar com nosso atendimento para entender seus objetivos e montar a estratégia ideal para você."</p>
-                            <span style="font-size:0.8rem; color:var(--text-light); display:block; margin-top:0.75rem;">— Equipe Vetorizando</span>
                         </div>
                     </div>
 
@@ -124,6 +119,7 @@
         </section>
 
         <!-- FAQ -->
+        <!--
         <section class="section" style="background: var(--white-pure);">
             <div class="container">
                 <div class="section-header reveal">
@@ -154,6 +150,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <!-- FOOTER -->
         <?php require_once("includes/rodape.php"); ?>
