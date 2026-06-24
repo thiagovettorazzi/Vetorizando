@@ -1,16 +1,16 @@
- 
+
 - Home: 50%
 - Sobre a empresa: 100%
 - Identidades visuais: 100%
 - Outras soluções: 0%
-- Calendário pet: 80%
+- Calendário pet: 100%
 - Contato: 50%
 - Rodapé: 70%
 
-<!--
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
+            <!--
             <div class="footer-brand">
                 <a href="index.php" class="logo">
                     <img src="img/logo.png" alt="Vetorizando" style="height: 2.5rem">
@@ -45,12 +45,13 @@
                 <p>📍 Feliz, RS – Brasil</p>
                 <a href="contato.php" class="btn btn-gold btn-sm">Fale conosco</a>
             </div>
+            -->
         </div>
         <div class="footer-bottom">
             <p>© 2026 Vetorizando. Todos os direitos reservados.</p>
             <p>Feito com 🐾 para a medicina veterinária</p>
         </div>
     </div>
-</footer
- -->
+</footer>
+
 <script src="js/script.js"></script>
