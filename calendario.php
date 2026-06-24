@@ -34,66 +34,18 @@
                 </div>
 
                 <div class="months-grid reveal">
-                    <button class="month-btn" data-month="1">
-                        <span class="month-num">01</span>
-                        <span class="month-name">Janeiro</span>
-                        <span class="month-count">4 datas</span>
+                    <?php
+                    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+                    for ($i = 0; $i < 12; $i++) {
+                        $num = str_pad($i + 1, 2, "0", STR_PAD_LEFT);
+                        $mesNome = $meses[$i];
+                    ?>
+                    <button class="month-btn" data-month="<?= $i + 1 ?>">
+                        <span class="month-num"><?= $num ?></span>
+                        <span class="month-name"><?= $mesNome ?></span>
+                        <span class="month-count"></span>
                     </button>
-                    <button class="month-btn" data-month="2">
-                        <span class="month-num">02</span>
-                        <span class="month-name">Fevereiro</span>
-                        <span class="month-count">4 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="3">
-                        <span class="month-num">03</span>
-                        <span class="month-name">Março</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="4">
-                        <span class="month-num">04</span>
-                        <span class="month-name">Abril</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="5">
-                        <span class="month-num">05</span>
-                        <span class="month-name">Maio</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="6">
-                        <span class="month-num">06</span>
-                        <span class="month-name">Junho</span>
-                        <span class="month-count">4 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="7">
-                        <span class="month-num">07</span>
-                        <span class="month-name">Julho</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="8">
-                        <span class="month-num">08</span>
-                        <span class="month-name">Agosto</span>
-                        <span class="month-count">4 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="9">
-                        <span class="month-num">09</span>
-                        <span class="month-name">Setembro</span>
-                        <span class="month-count">9 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="10">
-                        <span class="month-num">10</span>
-                        <span class="month-name">Outubro</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="11">
-                        <span class="month-num">11</span>
-                        <span class="month-name">Novembro</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
-                    <button class="month-btn" data-month="12">
-                        <span class="month-num">12</span>
-                        <span class="month-name">Dezembro</span>
-                        <span class="month-count">5 datas</span>
-                    </button>
+                    <?php } ?>
                 </div>
 
                 <!-- PANEL DE DATAS -->
@@ -125,5 +77,8 @@
 
         <!-- FOOTER -->
         <?php require_once("includes/rodape.php"); ?>
+
+        <!-- Scripts Específicos -->
+        <script src="js/calendario.js"></script>
     </body>
 </html>
