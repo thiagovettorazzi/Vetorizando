@@ -1429,3 +1429,619 @@ em { font-style: italic; color: var(--gold-dark); }
     .sobre-numeros-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .sobre-numero-val { font-size: 2.75rem; }
 }
+
+/* ============================================================
+   IDENTIDADES VISUAIS PAGE — ESTILOS EXCLUSIVOS
+   ============================================================ */
+
+/* ---- IV HERO ---- */
+.iv-hero {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6rem;
+}
+.iv-hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.iv-hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+.iv-hero-orb-1 {
+    width: 480px; height: 480px;
+    top: -150px; right: -80px;
+    background: radial-gradient(circle, rgba(212,168,67,0.2) 0%, transparent 70%);
+    animation: float 9s ease-in-out infinite;
+}
+.iv-hero-orb-2 {
+    width: 320px; height: 320px;
+    bottom: -60px; left: -80px;
+    background: radial-gradient(circle, rgba(166,124,58,0.14) 0%, transparent 70%);
+    animation: float 12s ease-in-out infinite reverse;
+}
+.iv-hero-orb-3 {
+    width: 220px; height: 220px;
+    top: 40%; left: 40%;
+    background: radial-gradient(circle, rgba(212,168,67,0.08) 0%, transparent 70%);
+    animation: float 7s ease-in-out infinite 2s;
+}
+.iv-hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(212,168,67,0.1);
+}
+.iv-hero-ring-1 { width: 700px; height: 700px; top: -280px; right: -230px; }
+.iv-hero-ring-2 { width: 500px; height: 500px; top: -180px; right: -130px; }
+.iv-hero-ring-3 { width: 300px; height: 300px; top: -80px; right: -30px; }
+
+.iv-hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.25rem;
+}
+
+/* ---- IV INTRO GRID ---- */
+.iv-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+/* VISUAL STACK */
+.iv-intro-visual { position: relative; padding: 2rem 1rem; }
+.iv-visual-stack { position: relative; height: 380px; }
+.iv-visual-card {
+    position: absolute;
+    background: var(--white-pure);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.75rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--white-deep);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+.iv-visual-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-gold); border-color: rgba(212,168,67,0.3); }
+.iv-visual-icon { font-size: 1.5rem; }
+.iv-visual-label { font-size: 0.8rem; font-weight: 600; color: var(--text-mid); letter-spacing: 0.05em; }
+.iv-visual-card-1 { top: 0; left: 0; width: 200px; animation: float 7s ease-in-out infinite; }
+.iv-visual-card-2 { top: 80px; right: 0; width: 210px; animation: float 9s ease-in-out infinite 1.5s; }
+.iv-visual-card-3 {
+    bottom: 40px; left: 30px;
+    width: 240px;
+    background: var(--gold-grad);
+    border-color: transparent;
+    animation: float 8s ease-in-out infinite 3s;
+}
+.iv-visual-card-3 .iv-visual-icon, .iv-visual-card-3 .iv-visual-label { color: white; }
+.iv-color-dots { display: flex; gap: 0.4rem; margin-top: 0.25rem; }
+.iv-color-dots span {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    box-shadow: var(--shadow-sm);
+}
+.iv-visual-typo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    letter-spacing: 0.08em;
+}
+.iv-visual-badge {
+    position: absolute;
+    bottom: 20px; right: -10px;
+    background: var(--white-pure);
+    border: 1.5px solid rgba(212,168,67,0.35);
+    border-radius: 50px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold-dark);
+    box-shadow: var(--shadow-gold);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+.iv-visual-badge span {
+    background: var(--gold-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+/* ---- INCLUSO GRID ---- */
+.iv-incluso-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.iv-incluso-card {
+    background: var(--white-pure);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem 1.75rem;
+    border: 1px solid var(--white-deep);
+    transition: var(--transition);
+}
+.iv-incluso-card:hover {
+    border-color: var(--gold-light);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-gold);
+}
+.iv-incluso-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+.iv-incluso-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+.iv-incluso-card p { font-size: 0.875rem; color: var(--text-mid); line-height: 1.7; }
+
+.iv-incluso-extra {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: linear-gradient(135deg, rgba(212,168,67,0.08) 0%, rgba(166,124,58,0.06) 100%);
+    border: 1px solid rgba(212,168,67,0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 2rem;
+    margin-top: 0.5rem;
+}
+.iv-incluso-extra-icon { font-size: 1.75rem; flex-shrink: 0; }
+.iv-incluso-extra p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.7; margin: 0; }
+
+/* ---- DIFERENCIAIS SECTION ---- */
+.iv-diferenciais-section {
+    background: linear-gradient(160deg, var(--text-dark) 0%, #3D2A0F 100%);
+    position: relative;
+    overflow: hidden;
+}
+.iv-diferenciais-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at 80% 50%, rgba(212,168,67,0.09) 0%, transparent 60%);
+}
+.iv-diff-eyebrow { color: var(--gold-light) !important; }
+.iv-diff-title { color: white !important; }
+.iv-diff-title em { color: var(--gold-light); }
+
+.iv-diff-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+.iv-diff-card-featured {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(212,168,67,0.25);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+}
+.iv-diff-card-featured:hover { border-color: rgba(212,168,67,0.5); background: rgba(255,255,255,0.08); }
+.iv-diff-icon {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: var(--gold-light);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+.iv-diff-card-featured h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+.iv-diff-card-featured p { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.8; margin-bottom: 0.75rem; }
+.iv-diff-sub { font-style: italic; color: rgba(255,255,255,0.5) !important; font-size: 0.85rem !important; }
+
+.iv-diff-cards-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.iv-diff-card-sm {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    transition: var(--transition);
+}
+.iv-diff-card-sm:hover { border-color: rgba(212,168,67,0.3); background: rgba(255,255,255,0.07); transform: translateX(4px); }
+.iv-diff-icon-sm { font-size: 1.75rem; flex-shrink: 0; }
+.iv-diff-card-sm h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.iv-diff-card-sm p { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.75; }
+
+/* ---- MATERIAIS GRID ---- */
+.iv-materiais-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+.iv-materiais-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.75rem 0 0;
+}
+.iv-material-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--white-deep);
+    border: 1px solid rgba(212,168,67,0.2);
+    border-radius: 50px;
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-mid);
+    transition: var(--transition);
+}
+.iv-material-tag:hover { border-color: var(--gold-light); color: var(--gold-dark); background: var(--white-pure); transform: translateY(-2px); }
+
+/* MOCKUP VISUAL */
+.iv-materiais-visual { position: relative; }
+.iv-materiais-mockup { position: relative; height: 360px; }
+.iv-mockup-card {
+    position: absolute;
+    background: var(--white-pure);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--white-deep);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+.iv-mockup-card:hover { box-shadow: var(--shadow-gold); border-color: rgba(212,168,67,0.3); transform: translateY(-4px); }
+.iv-mockup-card-1 { top: 0; left: 0; width: 180px; height: 230px; animation: float 8s ease-in-out infinite; }
+.iv-mockup-card-2 { top: 30px; right: 20px; width: 190px; height: 110px; animation: float 10s ease-in-out infinite 2s; }
+.iv-mockup-card-3 { bottom: 0; left: 60px; width: 220px; height: 120px; animation: float 7s ease-in-out infinite 4s; }
+.iv-mockup-line {
+    height: 8px;
+    background: var(--white-deep);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.iv-mockup-line-gold { background: var(--gold-grad); height: 4px; margin-bottom: 1rem; }
+.iv-mockup-line-short { width: 65%; }
+.iv-mockup-line-xshort { width: 40%; }
+.iv-mockup-circle {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--gold-grad);
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+.iv-mockup-grid-dots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    flex: 1;
+}
+.iv-mockup-grid-dots::before {
+    content: '';
+    grid-column: 1 / -1;
+    height: 6px;
+    background: var(--gold-grad);
+    border-radius: 3px;
+}
+.iv-mockup-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--white-deep);
+}
+
+/* ---- PORTFOLIO ---- */
+.iv-portfolio-section { background: var(--white-warm); }
+
+.iv-portfolio-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+.iv-filter-btn {
+    background: var(--white-pure);
+    border: 1.5px solid var(--white-deep);
+    border-radius: 50px;
+    padding: 0.55rem 1.4rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-mid);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.iv-filter-btn:hover { border-color: var(--gold-light); color: var(--gold-dark); }
+.iv-filter-active {
+    background: var(--gold-grad);
+    border-color: transparent;
+    color: white;
+}
+.iv-filter-active:hover { color: white; opacity: 0.9; }
+
+/* PORTFOLIO GRID */
+.iv-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 1.25rem;
+}
+.iv-portfolio-item { overflow: hidden; border-radius: var(--radius-lg); }
+.iv-portfolio-item-wide { grid-column: span 2; }
+
+/* Animação de filtro */
+.iv-item-hidden {
+    opacity: 0;
+    transform: scale(0.92);
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
+}
+.iv-item-show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    position: relative;
+    visibility: visible;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.iv-portfolio-card {
+    height: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    background: var(--white-deep);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.iv-portfolio-img-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.iv-portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    display: block;
+}
+.iv-portfolio-card:hover .iv-portfolio-img { transform: scale(1.07); }
+
+.iv-portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(42,31,14,0.85) 0%, rgba(42,31,14,0.1) 60%, transparent 100%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.35s ease;
+}
+.iv-portfolio-card:hover .iv-portfolio-overlay { opacity: 1; }
+.iv-portfolio-zoom {
+    background: rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    width: 52px; height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: blur(4px);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s ease;
+}
+.iv-portfolio-card:hover .iv-portfolio-zoom {
+    transform: scale(1);
+    opacity: 1;
+}
+.iv-portfolio-zoom:hover { background: rgba(212,168,67,0.5); border-color: var(--gold-light); }
+.iv-portfolio-info {
+    background: var(--white-pure);
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+.iv-portfolio-cat {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+}
+.iv-portfolio-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+}
+.iv-portfolio-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.95rem;
+    color: var(--text-mid);
+}
+.iv-portfolio-cta-link {
+    color: var(--gold-dark);
+    font-weight: 600;
+    transition: color 0.25s;
+}
+.iv-portfolio-cta-link:hover { color: var(--gold-light); }
+
+/* ---- LIGHTBOX ---- */
+.iv-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+.iv-lightbox-open {
+    opacity: 1;
+    visibility: visible;
+}
+.iv-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 14, 5, 0.93);
+    backdrop-filter: blur(6px);
+}
+.iv-lightbox-content {
+    position: relative;
+    z-index: 2;
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.iv-lightbox-img {
+    max-width: 88vw;
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: var(--radius);
+    box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+    transition: opacity 0.25s ease;
+}
+.iv-lightbox-caption {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.iv-lightbox-caption strong {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+}
+.iv-lightbox-caption span {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+}
+.iv-lightbox-close {
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    z-index: 3;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    width: 48px; height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.iv-lightbox-close:hover { background: rgba(212,168,67,0.3); border-color: var(--gold-light); }
+.iv-lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    width: 52px; height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.iv-lightbox-nav:hover { background: rgba(212,168,67,0.3); border-color: var(--gold-light); }
+.iv-lightbox-prev { left: 1.5rem; }
+.iv-lightbox-next { right: 1.5rem; }
+.iv-lightbox-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.1em;
+    z-index: 3;
+}
+.iv-no-scroll { overflow: hidden; }
+
+/* ---- IV RESPONSIVE ---- */
+@media (max-width: 1024px) {
+    .iv-intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .iv-intro-visual { display: none; }
+    .iv-incluso-grid { grid-template-columns: repeat(2, 1fr); }
+    .iv-diff-grid { grid-template-columns: 1fr; }
+    .iv-materiais-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .iv-materiais-visual { display: none; }
+    .iv-portfolio-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 260px; }
+    .iv-portfolio-item-wide { grid-column: span 2; }
+}
+@media (max-width: 768px) {
+    .iv-hero-actions { flex-direction: column; align-items: center; }
+    .iv-incluso-grid { grid-template-columns: 1fr; }
+    .iv-portfolio-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+    .iv-portfolio-item-wide { grid-column: span 1; }
+    .iv-lightbox-nav { width: 40px; height: 40px; }
+    .iv-lightbox-prev { left: 0.75rem; }
+    .iv-lightbox-next { right: 0.75rem; }
+}
+@media (max-width: 480px) {
+    .iv-portfolio-grid { grid-auto-rows: 200px; }
+    .iv-portfolio-info { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+    .iv-filter-btn { font-size: 0.77rem; padding: 0.5rem 1rem; }
+}

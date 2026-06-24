@@ -1,3 +1,13 @@
+ 
+- Home: 50%
+- Sobre a empresa: 100%
+- Identidades visuais: 70%
+- Outras soluções: 0%
+- Calendário pet: 80%
+- Contato: 50%
+- Rodapé: 70%
+
+<!--
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
@@ -41,5 +51,6 @@
             <p>Feito com 🐾 para a medicina veterinária</p>
         </div>
     </div>
-</footer>
+</footer
+ -->
 <script src="js/script.js"></script>
