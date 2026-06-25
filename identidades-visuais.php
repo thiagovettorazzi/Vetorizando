@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo             = "Identidades Visuais";
+        $titulo             = "Identidades Visuais - Vetorizando";
         $meta_category      = "Marketing Veterinário";
         $meta_description   = "Identidades visuais exclusivas para clínicas e hospitais veterinários. Logotipo, paleta de cores, tipografia e manual de marca — sem limite de alterações.";
 

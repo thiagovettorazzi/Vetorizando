@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo             = "Calendário Pet";
+        $titulo             = "Calendário Pet - Vetorizando";
         $meta_category      = "";
         $meta_description   = "";
         

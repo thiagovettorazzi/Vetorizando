@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo             = "Contato";
+        $titulo             = "Contato - Vetorizando";
         $meta_category      = "";
         $meta_description   = "";
         

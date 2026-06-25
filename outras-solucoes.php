@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo           = "Outras Soluções";
+        $titulo           = "Outras Soluções - Vetorizando";
         $meta_category    = "Marketing Veterinário";
         $meta_description = "Criação de sites, tráfego pago, identidade verbal, assessoria de conteúdo e sessões fotográficas para clínicas e hospitais veterinários. Soluções complementares da Vetorizando.";
 

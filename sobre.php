@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <?php
-        $titulo             = "Sobre Nós";
+        $titulo             = "Sobre Nós - Vetorizando";
         $meta_category      = "Marketing Veterinário";
         $meta_description   = "Conheça a Vetorizando: agência especializada em marketing veterinário. Nossa história, missão, valores e o que nos torna únicos no mercado pet.";
         
