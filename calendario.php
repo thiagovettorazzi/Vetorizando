@@ -3,8 +3,8 @@
     <head>
         <?php
         $titulo             = "Calendário Pet - Vetorizando";
-        $meta_category      = "";
-        $meta_description   = "";
+        $meta_category      = "calendario pet, datas comemorativas, conteudo veterinario, marketing veterinario";
+        $meta_description   = "Calendário de datas comemorativas do universo pet para planejar conteúdos e campanhas veterinárias.";
         
         require_once("includes/head.php");
         ?>

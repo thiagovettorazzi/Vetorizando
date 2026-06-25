@@ -3,7 +3,7 @@
     <head>
         <?php
         $titulo             = "Identidades Visuais - Vetorizando";
-        $meta_category      = "Marketing Veterinário";
+        $meta_category      = "identidade visual, logotipo, marca veterinaria, design veterinario";
         $meta_description   = "Identidades visuais exclusivas para clínicas e hospitais veterinários. Logotipo, paleta de cores, tipografia e manual de marca — sem limite de alterações.";
 
         require_once("includes/head.php");

@@ -3,7 +3,7 @@
     <head>
         <?php
         $titulo           = "Outras Soluções - Vetorizando";
-        $meta_category    = "Marketing Veterinário";
+        $meta_category    = "sites, trafego pago, identidade verbal, fotografia veterinaria, conteudo veterinario";
         $meta_description = "Criação de sites, tráfego pago, identidade verbal, assessoria de conteúdo e sessões fotográficas para clínicas e hospitais veterinários. Soluções complementares da Vetorizando.";
 
         require_once("includes/head.php");

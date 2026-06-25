@@ -3,7 +3,7 @@
     <head>
         <?php
         $titulo             = "Sobre Nós - Vetorizando";
-        $meta_category      = "Marketing Veterinário";
+        $meta_category      = "sobre, agencia veterinaria, marketing veterinario, vetorizando";
         $meta_description   = "Conheça a Vetorizando: agência especializada em marketing veterinário. Nossa história, missão, valores e o que nos torna únicos no mercado pet.";
         
         require_once("includes/head.php");

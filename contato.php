@@ -3,8 +3,8 @@
     <head>
         <?php
         $titulo             = "Contato - Vetorizando";
-        $meta_category      = "";
-        $meta_description   = "";
+        $meta_category      = "contato, orcamento, atendimento, marketing veterinario";
+        $meta_description   = "Entre em contato com a Vetorizando para tirar duvidas e solicitar um orcamento para sua clinica ou hospital veterinario.";
         
         require_once("includes/head.php");
         ?>
