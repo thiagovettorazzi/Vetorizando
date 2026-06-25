@@ -38,7 +38,9 @@ $meta_image_height = "";
 
 <link rel="canonical"			href="<?=$meta_canonical;?>">
 <link rel="author"				href="usguri - www.usguri.com.br">
-<link rel="icon"				href="img/core-favoritos.png">
+<link rel="icon"                href="favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="icon"                href="favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon"       href="favicon.ico">
 
 <!-- facebook -->
 <meta property="og:description"		content="<?=$meta_description;?>">
@@ -66,12 +68,12 @@ $meta_image_height = "";
 <!-- iOS and safari -->
 <meta name="apple-mobile-web-app-capable"	content="yes">
 <meta name="apple-mobile-web-app-title"		content="<?=$meta_site;?>">
-<link href="img/core-smartphones.png"		rel="apple-touch-icon">
-<link href="img/core-pin.svg"				rel="mask-icon" color="#212121">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
 <!-- android -->
 <meta name="mobile-web-app-capable"			content="yes">
-<meta name="theme-color"					content="#212121">
+<meta name="theme-color"					content="#ffffff">
+<link rel="manifest" href="site.webmanifest">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
